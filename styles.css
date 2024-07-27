@@ -511,6 +511,16 @@ article .icon {
   .contact-info-upper-container {
     flex-direction: column;
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 1rem; /* Gap between items */
+    margin: 2rem auto;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
   }
   .contact-info-container img {
   width: 40px; /* Adjust width as needed */
