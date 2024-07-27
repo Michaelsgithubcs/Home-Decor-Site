@@ -283,7 +283,11 @@ article .icon {
 .contact-icon {
   cursor: default;
 }
-
+@media (max-width: 600px) {
+  .contact-info-upper-container {
+    grid-template-columns: 1fr;
+  }
+}
 .email-icon {
   height: 2.5rem;
 }
