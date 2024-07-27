@@ -418,3 +418,22 @@ article .icon {
   font-size: 1.5rem;
   color: var(--text-light);
   transition: color 0.
+}
+  /* Add hamburger menu for mobile devices */  
+ .hamburger {  
+   display: block;  
+   position: absolute;  
+   top: 0;  
+   right: 0;  
+   padding: 10px;  
+   font-size: 24px;  
+   cursor: pointer;  
+  }  
+   
+  /* Style hamburger menu icon */  
+ .hamburger::before {  
+   content: "\f0c9";  
+   font-family: "Font Awesome 5 Free";  
+   font-weight: 900;  
+  }  
+}
