@@ -511,18 +511,16 @@ article .icon {
   .contact-info-upper-container {
     flex-direction: column;
     text-align: center;
-	
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-template-rows: repeat(2, auto); /* 2 rows */
-  gap: 1rem; /* Gap between items */
-  margin: 2rem auto;
-  padding: 0.5rem;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+    display: grid;
+	grid-template-columns: repeat(2, 1fr); /* 2 columns */
+	grid-template-rows: repeat(2, auto); /* 2 rows */
+	gap: 0.2rem; /* Gap between items */
+	margin: 2rem auto;
+	padding: 0.5rem;
+	border-radius: 2rem;
+	border: rgb(53, 53, 53) 0.1rem solid;
+	border-color: rgb(163, 163, 163);
+	background: rgb(250, 250, 250);
 }
   }
   .contact-info-container img {
@@ -534,12 +532,22 @@ article .icon {
 .contact-info-container img:hover {
   transform: translateX(-10px); /* Pan left by 10px */
 }
+.contact-info-container p {
+  margin-left: 0.5rem; /* Space between icon and text */
+  display: inline; /* Ensure text stays on the same line */
+  white-space: nowrap; /* Prevent text from wrapping */
 }
-/* Remove Borders on Contact Info Containers */
-.contact-info-container {
-  border: none; /* Remove any border */
-  /* Optionally, you can also reset other border properties if they were set */
-  border-width: 0;
-  border-style: none;
-  border-color: transparent;
+}
+.contact-info-container p {
+  margin-left: 0.5rem; /* Space between icon and text */
+  display: inline; /* Ensure text stays on the same line */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+.contact-info-container .contact-icon {
+  width: 2.5rem; /* Fixed width */
+  height: 2.5rem; /* Fixed height */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+.contact-info-container img:hover {
+  transform: translateX(-10px); /* Pan left by 10px */
 }
