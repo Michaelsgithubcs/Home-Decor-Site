@@ -419,21 +419,88 @@ article .icon {
   color: var(--text-light);
   transition: color 0.
 }
-  /* Add hamburger menu for mobile devices */  
- .hamburger {  
-   display: block;  
-   position: absolute;  
-   top: 0;  
-   right: 0;  
-   padding: 10px;  
-   font-size: 24px;  
-   cursor: pointer;  
+ 
+/* Add media queries for mobile devices */  
+@media only screen and (max-width: 768px) {  
+  /* Adjust font sizes and line heights */  
+  body {  
+   font-size: 16px;  
+   line-height: 1.5;  
   }  
    
-  /* Style hamburger menu icon */  
- .hamburger::before {  
-   content: "\f0c9";  
-   font-family: "Font Awesome 5 Free";  
-   font-weight: 900;  
+  /* Modify grid system for mobile devices */  
+ .grid-container {  
+   display: grid;  
+   grid-template-columns: 1fr;  
+   gap: 10px;  
   }  
+   
+  /* Optimize images for mobile devices */  
+  img {  
+   width: 100%;  
+   height: auto;  
+   max-width: 100%;  
+  }  
+   
+  /* Adjust navigation menu for mobile devices  */
+ .nav__links {  
+   display: flex;  
+   flex-direction: column;  
+   align-items: center;  
+  }  
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem 0.5rem;
+  }
+
+
+  .header__content {
+    padding: 1.5rem;
+    bottom: -8rem;
+  }
+
+  .header__content h1 {
+    font-size: 3rem;
+  }
+
+  .about__container {
+    grid-template-columns: 1fr;
+    padding: 5rem 1rem;
+  }
+
+  .about__content h4 {
+    padding-left: 3rem;
+  }
+
+  .experience-sub-title {
+    font-size: 1.5rem;
+  }
+
+  .experience-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article-container {
+    justify-content: center;
+  }
+
+  .article-container article {
+    width: 100%;
+  }
+  
+  #projects .project-img {
+    width: 100%;
+    height: auto;
+  }
+
+  #contact {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+    text-align: center;
+  }
 }
