@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Poppins:wght@400;500;600&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
-
-
-
-
-
-
 /* GLOBAL STYLES */
 :root {
   --primary-color: #f5f4f2;
@@ -129,7 +123,7 @@ nav {
   position: relative;
 }
 
-.header__content h4::before {
+/*.header__content h4::before {
   content: "";
   position: absolute;
   bottom: -1rem;
@@ -137,7 +131,7 @@ nav {
   height: 2px;
   width: 40px;
   background-color: var(--text-light);
-}
+}*/
 
 .header__content h1 {
   max-width: 600px;
